@@ -1,0 +1,73 @@
+.formblog {
+  .inputBlog {
+    width: 100%;
+  }
+  .edit-blog {
+    margin-left: 5rem;
+    margin-top: 5rem;
+  }
+  .label {
+    font-size: 15px;
+  }
+  .title-blogProduct {
+    margin-top: 30px;
+  }
+  .btn-submit {
+    background-color: #79043c;
+    color: #f8e9f0;
+    width: 20rem;
+  }
+  .btn-submit:hover {
+    background-color: #504c4e;
+  }
+
+  .btn-select-img {
+    background-color: #0d6efd;
+    width: 15rem;
+    cursor: pointer;
+  }
+  .btn-select:hover {
+    background-color: #0f51b6;
+  }
+  .btn-remove-img {
+    background-color: #dc3545 !important;
+    width: 15rem;
+  }
+  .btn-remove:hover {
+    background-color: #a5212e;
+  }
+  .btnRemove {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  .btnAppend {
+    background-color: #0d6efd;
+    color: #f8e9f0;
+
+    border: none;
+    outline: none;
+  }
+  .btnAppend:hover {
+    background-color: #0f51b6;
+  }
+  .errors {
+    background-color: #79043c;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .sectionInput {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  .formblog {
+    .inputBlog {
+      font-size: 16px;
+      width: 80%;
+    }
+    .label {
+      font-size: 20px;
+    }
+  }
+}

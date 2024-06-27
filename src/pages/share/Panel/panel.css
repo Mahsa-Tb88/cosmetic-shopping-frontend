@@ -1,0 +1,35 @@
+.panel {
+  margin-top: 5rem;
+  .link {
+    color: #79043c;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  .link:hover {
+    background-color: #504c4e;
+    color: #f8e9f0;
+  }
+  .active {
+    background-color: #79043c !important;
+    color: #f8e9f0;
+  }
+  .sideBar {
+    background-color: #f8e9f0;
+    border-top: 1px solid #fff;
+  }
+}
+@media (min-width: 768px) {
+  .panel {
+    margin-top: 8rem;
+    .link {
+      font-size: 2rem;
+    }
+  }
+}
+[data-bs-theme="dark"] .panel {
+  .sideBar {
+    background-color: #212529;
+    border-top: none;
+  }
+}

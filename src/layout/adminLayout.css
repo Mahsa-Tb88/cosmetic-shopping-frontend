@@ -1,0 +1,116 @@
+.adminlayout {
+  .mainAdmin {
+    width: 80%;
+  }
+  .link {
+    text-decoration: none;
+  }
+  .headerAdmin {
+    background-color: #f8e9f0;
+    padding: 10px;
+    height: 5rem;
+  }
+  .logo-admin {
+    width: 5rem;
+  }
+  .sidebarAdmin {
+    width: 24%;
+    background-color: #f8e9f0;
+  }
+  .linkAdmin {
+    color: #79043c;
+    font-size: 1.2rem;
+  }
+  .linkAdmin:hover {
+    background-color: #504c4e;
+    color: #f8e9f0;
+  }
+  .active {
+    background-color: #79043c !important;
+    color: #f8e9f0 !important;
+  }
+  .titleAdmin {
+    height: 5rem;
+    padding: 15px 0;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+  .btn-mood {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 13px;
+    border: 1px solid #f8e9f0;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  .btn-mood:hover {
+    border: 1px solid #79043c;
+    background-color: #79043c;
+    color: #f8e9f0;
+  }
+  .signout-btnAdmin,
+  .back-btnAdmin {
+    border: none;
+    outline: none;
+    border: 1px solid #79043c;
+    width: 5rem;
+    height: 2rem;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #79043c;
+    color: #f8e9f0;
+    text-decoration: none;
+  }
+
+  .signout-btnAdmin:hover,
+  .back-btnAdmin:hover {
+    color: #f8e9f0;
+    background-color: #504c4e;
+    border: 1px solid #504c4e;
+  }
+}
+@media (min-width: 768px) {
+  .adminlayout {
+    .headerAdmin {
+      padding: 15px;
+      height: 7rem;
+    }
+    .linkAdmin {
+      font-size: 2rem;
+    }
+    .logo-admin {
+      width: 9rem;
+    }
+    .btn-mood {
+      font-size: 18px;
+      margin-right: 15px;
+    }
+    .titleAdmin {
+      height: 7rem;
+    }
+    .signout-btnAdmin,
+    .back-btnAdmin {
+      font-size: 16px;
+      width: 8.5rem;
+      height: 3.2rem;
+    }
+  }
+}
+[data-bs-theme="dark"] .adminlayout {
+  .headerAdmin {
+    background-color: #212529;
+  }
+  .sidebarAdmin {
+    background-color: #212529;
+  }
+  .titleAdmin {
+    border-bottom: 1px solid #504c4e;
+    border-right: 1px solid #504c4e;
+  }
+  .linkAdmin {
+    color: #f8e9f0;
+  }
+}

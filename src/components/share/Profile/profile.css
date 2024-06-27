@@ -1,0 +1,34 @@
+.profile-user {
+  margin-top: 4rem;
+  .input {
+    border: 1px solid #f3f3f3;
+  }
+  .inputProfile {
+    width: 100%;
+  }
+  .input:focus {
+    outline: none;
+    border-color: #79043c;
+  }
+
+  .btn-submit {
+    background-color: #79043c;
+    color: #f8e9f0;
+    width: 20rem;
+  }
+  .btn-submit:hover {
+    background-color: #504c4e;
+  }
+  .errors{
+    background-color: #79043c;
+    color:#f3f3f3
+  }
+}
+@media (min-width: 768px) {
+  .profile-user {
+    .inputProfile {
+      font-size: 15px;
+      width: 75%;
+    }
+  }
+}

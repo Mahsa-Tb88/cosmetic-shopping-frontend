@@ -1,0 +1,45 @@
+.categoryForm {
+  .inputCategory {
+    outline: none;
+    border: 1px solid #dee2e6;
+    font-size: 12px;
+    width: 100%;
+  }
+  .btn-submit {
+    background-color: #79043c;
+    color: #f8e9f0;
+  }
+  .btn-submit:hover {
+    background-color: #504c4e;
+  }
+  .btn-Cansel {
+    background-color: #f8e9f0;
+    color: #504c4e;
+    display: inline-block;
+  }
+
+  .btn-Cansel:hover {
+    background-color: #504c4e;
+    color: #f8e9f0;
+  }
+
+  .errors {
+    background-color: #79043c;
+    color: #f8e9f0;
+    padding: 8px 5px;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: 768px) {
+  .formCategory {
+    .inputCategory {
+      width: 75%;
+      font-size: 14px;
+    }
+    .btn-submit,
+    .btn-Cansel {
+      width: 20rem;
+    }
+  }
+}

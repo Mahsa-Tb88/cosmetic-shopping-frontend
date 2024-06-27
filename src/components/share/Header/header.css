@@ -1,0 +1,242 @@
+.header {
+  background-color: #f8e9f0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 105;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  border-bottom: 1px solid #fff;
+  height: 5rem;
+  padding: 10px 5px;
+  .link {
+    text-decoration: none;
+  }
+  .active {
+    background-color: #79043c !important;
+    color: #f8e9f0 !important;
+    border: none;
+  }
+
+  .navbar-mobile {
+    position: absolute;
+    left: -200px;
+    top: 5rem;
+    background-color: #f8e9f0;
+    transition: all 0.8s ease-in-out;
+    width: 15rem;
+  }
+  .showMenu {
+    left: 0;
+  }
+
+  .navlink {
+    text-decoration: none;
+    color: #504c4e;
+    font-size: 16px;
+    padding: 5px 20px;
+  }
+  .navlink:hover {
+    color: #79043c;
+  }
+  .icon-nav {
+    color: #79043c;
+  }
+  .logo {
+    width: 9rem;
+  }
+  .logo-mobile {
+    width: 5rem;
+  }
+  .btns {
+    border: none;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .signout-btn {
+    border: none;
+    outline: none;
+    border: 1px solid #79043c;
+    background-color: transparent;
+    width: 5rem;
+    height: 2rem;
+    font-size: 10px;
+  }
+  .btn-signIn {
+    width: 5rem;
+    height: 2rem;
+    font-size: 12px;
+    color: #504c4e;
+    background-color: #f8e9f0;
+  }
+  .btns:hover {
+    color: #f8e9f0;
+    border: 1px solid #504c4e;
+    background-color: #504c4e;
+  }
+  .btn-signUp {
+    width: 5rem;
+    height: 2rem;
+    font-size: 12px;
+    display: inline-block;
+    background-color: #79043c;
+    color: #f8e9f0;
+  }
+
+  .adminpanel-btn,
+  .userpanel-btn {
+    width: 5rem;
+    height: 2rem;
+    font-size: 10px;
+    background-color: #504c4e;
+    color: #f8e9f0;
+  }
+  .adminpanel-btn:hover,
+  .userpanel-btn:hover,
+  .signout-btn:hover {
+    background-color: #79043c;
+    color: #f8e9f0;
+  }
+  .link {
+    text-decoration: none;
+  }
+  .cart {
+    cursor: pointer;
+    padding: 3px;
+    margin-left: 3px;
+  }
+
+  .shaoppingcart {
+    color: #79043c;
+    height: 15px;
+    width: 15px;
+  }
+
+  .cart:hover {
+    background-color: #504c4e6f;
+    border-radius: 50%;
+  }
+  .numItem {
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    top: -7px;
+    right: -2px;
+    background-color: #504c4e;
+    color: #f8e9f0;
+    font-size: 10px;
+  }
+  .numItem:hover {
+    background-color: #504c4e;
+    color: #f8e9f0;
+  }
+
+  .btn-mood {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid #f8e9f0;
+    border-radius: 50%;
+    color: #212529;
+  }
+  .btn-mood:hover {
+    border: 1px solid #79043c;
+    background-color: #79043c;
+    color: #f8e9f0;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    height: 8rem;
+    padding: 15px 30px;
+
+    .logo-mobile {
+      width: 7rem;
+    }
+    .btn-signUp,
+    .btn-signIn {
+      font-size: 16px;
+      width: 8.5rem;
+      height: 3.2rem;
+      border: 1px solid #79043c;
+    }
+    .signout-btn,
+    .adminpanel-btn,
+    .userpanel-btn {
+      font-size: 13px;
+      width: 7rem;
+      height: 3.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar-mobile {
+      top: 8rem;
+    }
+    .shaoppingcart {
+      height: 22px;
+      width: 22px;
+    }
+    .btn-mood {
+      font-size: 20px;
+    }
+    .cart {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+[data-bs-theme="dark"] .header {
+  background-color: #504c4e;
+  .icon-nav {
+    color: #f8e9f0;
+  }
+  .navbar-mobile {
+    background-color: #504c4e;
+  }
+  .userpanel-btn,
+  .adminpanel-btn {
+    border: 1px solid #79043c;
+  }
+  .navlink {
+    color: #f8e9f0;
+  }
+  .navlink:hover {
+    background-color: #212529;
+    color: #f8e9f0;
+  }
+  .numItem {
+    background-color: #f8e9f0;
+    color: #504c4e;
+    border: 1px solid #f8e9f0;
+  }
+  .numItem:hover {
+    background-color: #504c4e;
+    color: #f8e9f0;
+    border-color: #79043c;
+  }
+  .shaoppingcart {
+    color: #f8e9f0;
+  }
+
+  .cart:hover {
+    background-color: #79043c;
+  }
+  .btn-signIn {
+    border: none;
+  }
+  .btn-signIn:hover {
+    background-color: #212529;
+  }
+  .btn-signUp:hover {
+    background-color: #212529;
+  }
+}

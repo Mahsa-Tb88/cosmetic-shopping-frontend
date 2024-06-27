@@ -1,0 +1,44 @@
+.userForm {
+  .inputUser {
+    outline: none;
+    border: 1px solid #dee2e6;
+    width: 100%;
+  }
+  .btn-submit {
+    background-color: #79043c;
+    color: #f8e9f0;
+  }
+  .btn-submit:hover {
+    background-color: #504c4e;
+  }
+  .btn-Cansel {
+    background-color: #f8e9f0;
+    color: #504c4e;
+    display: inline-block;
+  }
+
+  .btn-Cansel:hover {
+    background-color: #504c4e;
+    color: #f8e9f0;
+  }
+  .errors{
+    background-color: #79043c;
+    color: #fff;
+    padding: 5px 7px;
+  }
+}
+@media (min-width: 768px) {
+  .userForm {
+    .inputUser {
+      width: 75%;
+      font-size: 16px;
+    }
+    .form-select {
+      width: 25%;
+    }
+    .btn-submit,
+    .btn-submit {
+      width: 20rem;
+    }
+  }
+}

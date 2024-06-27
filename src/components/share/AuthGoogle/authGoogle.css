@@ -1,0 +1,8 @@
+.btnGoogle:hover {
+  background-color: #5d022e !important;
+  color: #fff;
+  border-color: #fff;
+}
+[data-bs-theme="dark"] .btnGoogle {
+  background-color: #3b3b3b !important;
+}

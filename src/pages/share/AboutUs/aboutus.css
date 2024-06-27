@@ -1,0 +1,233 @@
+/* header */
+.about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    .container-column {
+      width: 85%;
+      position: fixed;
+      top: 0;
+      height: 100%;
+    }
+  
+    .col-overlay div {
+      height: 100%;
+    }
+  
+    .inner-col {
+      background-color: #ffcece;
+      opacity: 0.2;
+    }
+  
+    /* main */
+    /* our brand */
+    .container-about {
+      width: 85%;
+      margin: 0 auto;
+    }
+  
+    .address-page {
+      width: 85%;
+      margin: 0 auto;
+      margin-top: 4rem;
+      padding: 1.5rem 0;
+    }
+  
+    .address-page a {
+      font-size: 1.2rem;
+      cursor: pointer;
+      position: relative;
+    }
+    .address-page :first-child {
+      color: #606060;
+    }
+    .address-page :first-child:hover {
+      color: #1e1e1e;
+    }
+    .address-page :last-child {
+      color: #1e1e1e;
+    }
+    .our-brand {
+      background-color: #3d021e;
+      width: 100%;
+      margin-bottom: 5.6rem;
+      margin-top: 15rem;
+    }
+    .our-brand-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .our-brand-container h1 {
+      padding-top: 3.2rem;
+      margin-bottom: 1.6rem;
+      color: #fff;
+      font-size: 2.4rem;
+    }
+    .our-brand-img {
+      text-align: center;
+    }
+    .our-brand-img img {
+      width: 80%;
+    }
+    .our-brand-container p {
+      width: 80%;
+      margin-top: 1.6rem;
+      margin-bottom: 5rem;
+      font-size: 1.8rem;
+      color: #fff;
+      line-height: 2.5rem;
+    }
+    @media (min-width: 768px) {
+      .address-page a {
+        font-size: 1.6rem;
+      }
+      .address-page {
+        margin-top: 7rem;
+        padding: 3rem 0;
+      }
+      .our-brand-container h1 {
+        font-size: 3.2rem;
+      }
+      .our-brand-container p {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+      }
+    }
+    /* heritage */
+    .our-brand-desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 85%;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+    }
+    .heritage {
+      margin-bottom: 3.2rem;
+    }
+    .heritage h3 {
+      font-size: 2rem;
+      margin-bottom: 0.4rem;
+    }
+    .heritage-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .heritage-img {
+      width: 100%;
+    }
+    .heritage-img img {
+      width: 100%;
+    }
+    .heritage-container :first-child {
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+      text-align: justify;
+      margin-bottom: 1.6rem;
+    }
+    .our-brand-desc-item h3 {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+    }
+    .our-brand-desc-item p {
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+      margin-bottom: 1.3rem;
+    }
+  
+    @media (min-width: 768px) {
+      .our-brand-desc {
+        margin-bottom: 5rem;
+      }
+      .heritage {
+        width: 83%;
+        margin-bottom: 5.6rem;
+      }
+      .heritage-container {
+        flex-direction: row;
+      }
+      .heritage-container :first-child {
+        width: 90%;
+        margin-bottom: 0;
+      }
+      .heritage-img {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .heritage-img img {
+        width: 100%;
+      }
+  
+      .heritage h3 {
+        font-size: 2.4rem;
+        margin-bottom: 0.8rem;
+      }
+      .heritage-container :first-child {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+      }
+      .our-brand-desc-item {
+        width: 83%;
+      }
+      .our-brand-desc-item h3 {
+        font-size: 2.4rem;
+        margin-bottom: 0.8rem;
+      }
+      .our-brand-desc-item p {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        margin-bottom: 1.6rem;
+      }
+    }
+    /*logo-group*/
+    .logo-group {
+      position: relative;
+      overflow: hidden;
+    }
+    .container-column-logo {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+    .col-overlay-logo div {
+      height: 100%;
+    }
+    .inner-col-logo {
+      background-color: #79043d78;
+      opacity: 0.2;
+    }
+  
+    .logo-img img {
+      height: 2rem;
+      width: 2rem;
+    }
+    .logo-text {
+      color: #79043c;
+      font-size: 1.2rem;
+      margin-left: 1rem;
+    }
+  
+    @media (min-width: 768px) {
+      .logo-img img {
+        height: 4rem;
+        width: 4rem;
+      }
+      .logo-text {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  

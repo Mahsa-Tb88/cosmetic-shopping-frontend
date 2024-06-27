@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+.body {
+  font-family: "Fredoka One", cursive;
+  font-family: "Kreon", serif;
+  background-color: #faf9f5;
+}

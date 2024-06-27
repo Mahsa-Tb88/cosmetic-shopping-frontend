@@ -1,0 +1,92 @@
+.blogAdmin {
+  .addNewBlog {
+    background-color: #79043c;
+    color: #f8e9f0;
+    padding: 7px 10px;
+    border: none;
+    margin-top: 20px;
+    width: 130px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .addBlogBtn {
+    border: none;
+    background-color: transparent;
+    color: #f8e9f0;
+    font-size: 12px;
+  }
+
+  .iconPlusUser {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .addNewUser:hover {
+    background-color: #504c4e;
+  }
+  .btn-tryAgain {
+    background-color: #79043c;
+    color: #f8e9f0;
+    border: none;
+    padding: 10px 20px;
+  }
+  .btn-tryAgain:hover {
+    background-color: #504c4e;
+  }
+  .loadingBlogAdmin {
+    color: #79043c;
+    margin-top: 5rem;
+  }
+  .operation-trash {
+    color: #79043c;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .operation-edit {
+    color: rgb(79, 79, 233);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .operation-trash:hover {
+    background-color: #79043c;
+    color: #fff;
+  }
+  .operation-edit:hover {
+    background-color: rgb(79, 79, 233);
+    color: #fff;
+  }
+  .btn-submit {
+    background-color: #79043c;
+    color: #f8e9f0;
+    width: 20rem;
+  }
+  .btn-submit:hover {
+    background-color: #504c4e;
+  }
+  .table-row th {
+    font-size: 12px;
+  }
+  .table-row td {
+    font-size: 8px;
+  }
+}
+@media (min-width: 768px) {
+  .blogAdmin {
+    width: 85%;
+    .addNewBlog {
+      padding: 10px 25px;
+      width: 20rem;
+      font-size: 15px;
+    }
+    .addBlogBtn {
+      font-size: 17px;
+    }
+    .table-row th {
+      font-size: 20px;
+    }
+    .table-row td {
+      font-size: 15px;
+    }
+  }
+}

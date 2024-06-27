@@ -1,0 +1,83 @@
+.productsAdmin {
+  .addProduct {
+    background-color: #79043c;
+    color: #f8e9f0;
+    padding: 7px 10px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 0;
+    width: 130px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .addProductBtn {
+    border: none;
+    background-color: transparent;
+    color: #f8e9f0;
+    font-size: 15px;
+  }
+  .iconPlusProduct {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .addProduct:hover {
+    background-color: #504c4e;
+  }
+  .btn-tryAgain {
+    background-color: #79043c;
+    color: #f8e9f0;
+    border: none;
+    padding: 10px 20px;
+  }
+  .btn-tryAgain:hover {
+    background-color: #504c4e;
+  }
+  .loadingProductsAdmin {
+    color: #79043c;
+    margin-top: 5rem;
+  }
+  .operation-trash {
+    color: #79043c;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .operation-edit {
+    color: rgb(79, 79, 233);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .operation-trash:hover {
+    background-color: #79043c;
+    color: #fff;
+  }
+  .operation-edit:hover {
+    background-color: rgb(79, 79, 233);
+    color: #fff;
+  }
+  .table-row th {
+    font-size: 12px;
+  }
+  .table-row td {
+    font-size: 8px;
+  }
+}
+@media (min-width: 768px) {
+  .productsAdmin {
+    width: 85%;
+    .addProduct {
+      padding: 10px 25px;
+      width: 20rem;
+      font-size: 15px;
+    }
+
+    .table-row th {
+      font-size: 18px;
+    }
+    .table-row td {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.cart {
+  .table-row {
+    vertical-align: middle;
+  }
+  .linkcart {
+    text-decoration: none;
+    color: black;
+    font-size: 8px;
+  }
+  .btn-trashCart {
+    color: rgb(249, 88, 88);
+    border: 1px solid rgb(249, 88, 88);
+    padding: 3px 0;
+    font-size: 8px;
+    cursor: pointer;
+  }
+  .btn-trashCart:hover {
+    background-color: rgb(249, 88, 88);
+    color: #fff;
+  }
+  .btn-minuCart {
+    background-color: rgb(249, 88, 88);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    font-size: 8px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .btn-minusCart:hover {
+    background-color: rgb(238, 40, 40);
+  }
+  .btn-plusCart {
+    background-color: rgb(36, 180, 36);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    font-size: 8px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .btn-plusCart:hover {
+    background-color: rgb(31, 128, 31);
+  }
+  .cardEmpty {
+    background-color: #79043c;
+    color: #fff;
+    width: 100%;
+    padding: 2rem;
+  }
+  .table-row th {
+    font-size: 10px;
+  }
+  .table-row td {
+    font-size: 8px;
+  }
+  .btn-purchases {
+    border: 2px solid #24b424;
+    background-color: transparent;
+    outline: none;
+    padding: 3px 10px;
+    color: #24b424;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .btn-purchases:hover {
+    background-color: #24b424;
+    color: #fff;
+  }
+}
+@media (min-width: 768px) {
+  .cart {
+    width: 85%;
+    margin: 0 auto;
+    .table-row th {
+      font-size: 18px;
+    }
+    .table-row td {
+      font-size: 14px;
+    }
+    .btn-minuCart {
+      border-radius: 5px;
+      padding: 2px;
+      font-size: 15px;
+    }
+    .btn-plusCart {
+      border-radius: 5px;
+      padding: 2px;
+      font-size: 15px;
+    }
+    .btn-trashCart {
+      font-size: 15px;
+      padding: 2px;
+    }
+    .btn-trashCart {
+      padding: 4px;
+      border-radius: 3px;
+    }
+    .totalPrice {
+      font-size: 20px;
+    }
+    .linkcart {
+      font-size: 14px;
+    }
+  }
+}
+[data-bs-theme="dark"] .cart {
+  .linkcart {
+    color: #fff;
+  }
+}

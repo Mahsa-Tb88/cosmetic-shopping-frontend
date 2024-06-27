@@ -1,0 +1,119 @@
+.footer {
+  position: relative;
+  background-color: #3d021e;
+  height: 100%;
+  .container-column-footer {
+    width: 85%;
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+  }
+  .col-overlay-footer div {
+    height: 100%;
+  }
+  .inner-col-footer {
+    background-color: #ffcece;
+    opacity: 0.2;
+    height: 100%;
+  }
+  .link {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: lighter;
+    position: relative;
+    margin-bottom: 0.8rem;
+    display: inline-block;
+  }
+  .link:hover {
+    color: #fa58a6;
+  }
+
+  .footer-title {
+    font-size: 2.4rem;
+    color: #ffffff;
+    margin-bottom: 1.6rem;
+    font-weight: bold;
+  }
+  .footer-desc {
+    font-size: 1.7rem;
+    color: #fff;
+  }
+
+  .footer-form {
+    margin-top: 2.6rem;
+  }
+  .footer-form-label {
+    font-size: 1.6rem;
+    color: #ffffff;
+  }
+  #footer-form-input {
+    outline: none;
+    padding: 0.8rem 1rem;
+    border: none;
+    background-color: transparent;
+    margin-left: 0.7rem;
+    width: 100%;
+    color: #fff;
+  }
+
+  .footer-form-email,
+  .footer-form-tabel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-form-email {
+    border-bottom: 1px solid #ffffff;
+    width: 100%;
+    margin-top: 3.2rem;
+    position: relative;
+    color: #fff;
+  }
+
+  .footer-form-btnSubmit {
+    font-size: 1.6rem;
+    border: 1px solid #dfdfdf;
+    background-color: transparent;
+    padding: 0.6rem 1rem;
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+  }
+  .footer-form-btnSubmit:hover {
+    background-color: #ffffff;
+    color: #79043c;
+  }
+  .footer-second {
+    background-color: rgba(23, 22, 22, 0.463);
+  }
+  .footer-third {
+    background-color: #0000009d;
+  }
+  .footer-second-container,
+  .footer-third-container,
+  .footer-first-container {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .icon-contact {
+    color: #fa58a6;
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+  }
+  .socialMedia {
+    color: #fa58a6;
+    font-size: 2.2rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    position: relative;
+  }
+  .socialMedia:hover {
+    color: #fff;
+  }
+}

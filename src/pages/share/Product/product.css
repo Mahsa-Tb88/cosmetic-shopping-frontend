@@ -1,0 +1,117 @@
+.productPage {
+  .product-container {
+    background-color: #79043c;
+    max-width: 85%;
+    padding: 2rem 3rem;
+    .image-product {
+      width: 22rem;
+    }
+    margin: 12rem 0;
+    .spinner,
+    .loading {
+      color: #79043c;
+    }
+    .btn-back {
+      background-color: #79043c;
+      color: #fff;
+    }
+
+    .titleProduct {
+      margin-bottom: 4rem;
+      font-size: 30px;
+    }
+    .btn-trashProduct {
+      color: rgb(249, 88, 88);
+      border: 1px solid rgb(249, 88, 88);
+      padding: 2px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+    .btn-trashProduct:hover {
+      background-color: rgb(249, 88, 88);
+      color: #fff;
+    }
+    .btn-minusProduct {
+      background-color: rgb(249, 88, 88);
+      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1px;
+      font-size: 1.2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+    .btn-minusProduct:hover {
+      background-color: rgb(238, 40, 40);
+    }
+    .btn-plusProduct {
+      background-color: rgb(36, 180, 36);
+      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1px;
+      font-size: 1.2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+    .btn-plusProduct:hover {
+      background-color: rgb(27, 106, 27);
+    }
+    .price-product {
+      background-color: #f8e9f0;
+    }
+    .btnAddToCartProduct {
+      background-color: #f8e9f0;
+      border: none;
+      padding: 12px 25px;
+      color: #79043c;
+      font-size: 1.7rem;
+      border: 1px solid #79043c;
+    }
+    .btnAddToCartProduct:hover {
+      background-color: #79043c;
+      color: #f8e9f0;
+      border: 1px solid #f8e9f0;
+    }
+    .operation-product {
+      background-color: #f8e9f0;
+      padding: 10px 0;
+    }
+    .desc-product {
+      text-align: justify;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .productPage {
+    .product-container {
+      padding: 5rem 8rem;
+      .image-product {
+        width: max-content;
+      }
+      .btn-plusProduct {
+        padding: 2px;
+        font-size: 20px;
+        border-radius: 5px;
+      }
+      .btn-trashProduct {
+        padding: 4px;
+        font-size: 2rem;
+      }
+      .btn-minusProduct {
+        padding: 2px;
+        font-size: 20px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+[data-bs-theme="dark"] .productPage {
+  .price-product {
+    color: #302f2f;
+  }
+}

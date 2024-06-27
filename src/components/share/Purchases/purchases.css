@@ -1,0 +1,26 @@
+.purchases {
+  height: 100vh;
+
+  .footer {
+    background-color: #f8e9f0 !important;
+  }
+  .table {
+    width: 85%;
+    margin: 3rem auto;
+  }
+}
+.purchasesEmpty {
+  background-color: #79043c;
+  color: #fff;
+  width: 100%;
+  padding: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+[data-bs-theme="dark"] .purchases {
+  .footer {
+    background-color: #504c4e !important;
+  }
+}

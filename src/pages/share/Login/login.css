@@ -1,0 +1,75 @@
+.login {
+  margin: 5rem auto;
+  .form_login {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    background-color: #79043c;
+    width: 80%;
+  }
+  .input {
+    font-size: 13px;
+    padding: 5px 7px;
+    border: 1px solid #79043c;
+    outline: #fff;
+  }
+ 
+  .btn-submit {
+    border: 1px solid #fff;
+    padding: 5px 8px;
+    font-size: 15px;
+    background-color: #fff;
+    color: #5d022e;
+  }
+  .btn-submit:hover {
+    background-color: #5d022e;
+    border-color: #fff;
+    color: #fff;
+  }
+  .form-check-input {
+    border: 1px solid #5d022e;
+  }
+  .form-check-input:checked {
+    background-color: #5d022e;
+    border-color: #79043c;
+  }
+}
+@media (min-width: 768px) {
+  .login {
+    margin: 10rem 0;
+
+    .form_login {
+      padding: 2rem 3rem;
+      width: 35%;
+    }
+    .input {
+      font-size: 17px;
+      padding: 5px 7px;
+    }
+    .btn-submit {
+      padding: 8px 12px;
+      font-size: 16px;
+    }
+  }
+  .signLink {
+    text-decoration: none;
+  }
+  .signLink:hover {
+    color: rgb(102, 206, 250) !important;
+  }
+  .hLine {
+    height: 0.5px;
+    background-color: #e2e0e0;
+    color: #fff;
+    display: inline-block;
+  }
+}
+[data-bs-theme="dark"] .login {
+  .btn-submit {
+    background-color: #3b3b3b;
+    color: #fff;
+  }
+  .btn-submit:hover {
+    background-color: #5d022e;
+  }
+}

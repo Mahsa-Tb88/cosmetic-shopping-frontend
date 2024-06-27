@@ -1,0 +1,15 @@
+.initializer {
+  font-size: 30px;
+  .loading {
+    color: #79043c;
+    font-size: 40px;
+  }
+  .spiner {
+    background-color: #79043c;
+    font-size: 40px;
+  }
+}
+
+[data-bs-theme="dark"] .initializer {
+  background-color: black;
+}

@@ -1,0 +1,19 @@
+.productsShop {
+  padding: 10rem 0;
+  .title-page {
+    color: #79043c;
+    padding: 5rem 0;
+    font-size: 3rem;
+  }
+  .msg {
+    color: #79043c;
+  }
+  .btn-error {
+    background-color: #79043c;
+    color: #fff;
+    padding: 20px 10px;
+  }
+  .btn-error:hover{
+    background-color: #5e0530;
+  }
+}

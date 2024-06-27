@@ -1,0 +1,15 @@
+.editCategory {
+  .loadingCategoryAdmin {
+    color: #79043c;
+    margin-top: 5rem;
+  }
+  .btn-tryAgain {
+    background-color: #79043c;
+    color: #f8e9f0;
+    border: none;
+    padding: 10px 20px;
+  }
+  .btn-tryAgain:hover {
+    background-color: #504c4e;
+  }
+}
