@@ -1,9 +1,14 @@
 import React, { useEffect } from "react";
 import "./aboutus.css";
 import { Helmet } from "react-helmet";
+import { useDispatch, useSelector } from "react-redux";
+import { userActions } from "../../../store/slices/userSlice";
 export default function About() {
+  const dispatch = useDispatch();
+
   useEffect(() => {
     window.scrollTo({ top: 0, behaviar: "smoothly" });
+    dispatch(userActions.setOpenMenu(false));
   }, []);
   return (
     <div className="about">

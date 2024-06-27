@@ -3,13 +3,20 @@ import { getBlogs } from "../../../utils/api";
 import "./blogs.css";
 import Pagination from "../../../components/share/Pagination/Pagination";
 import { Link, useSearchParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { userActions } from "../../../store/slices/userSlice";
 export default function Blogs() {
   const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [blogs, setBlogs] = useState([]);
   const [totalBlogs, setTotalBlogs] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
+  const dispatch = useDispatch();
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behaviar: "smoothly" });
+    dispatch(userActions.setOpenMenu(false));
+  }, []);
   useEffect(() => {
     const timeOut = setTimeout(fetchBlogs, 10);
     return () => clearTimeout(timeOut);

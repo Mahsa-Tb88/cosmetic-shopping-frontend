@@ -13,6 +13,7 @@ const initialState = {
   categories: [],
   initialized: false,
   initializedError: false,
+  isOpenMenu: false,
 };
 
 const userSlice = createSlice({
@@ -39,6 +40,9 @@ const userSlice = createSlice({
       delete localStorage.token;
       delete sessionStorage.token;
       state.user.isLoggedIn = action.payload;
+    },
+    setOpenMenu(state, action) {
+      state.isOpenMenu = action.payload;
     },
   },
 });

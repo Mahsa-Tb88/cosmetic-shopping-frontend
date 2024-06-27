@@ -8,7 +8,16 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { sendMsg } from "../../../utils/api";
+import { useDispatch } from "react-redux";
+import { userActions } from "../../../store/slices/userSlice";
 export default function Contact() {
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    window.scrollTo({ top: 0, behaviar: "smoothly" });
+    dispatch(userActions.setOpenMenu(false));
+  }, []);
+
   const { register, handleSubmit, formState, setValue } = useForm({
     defaultValues: {
       title: "",
@@ -22,9 +31,7 @@ export default function Contact() {
       message: "",
     },
   });
-  useEffect(() => {
-    window.scrollTo({ top: 0, behaviar: "smoothly" });
-  }, []);
+ 
   const { errors, isSubmitting } = formState;
   const [sendForm, setSendForm] = useState({ status: false, message: "" });
   async function onSubmit(data) {

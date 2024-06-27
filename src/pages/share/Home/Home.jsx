@@ -5,12 +5,19 @@ import { Link, useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import Slide from "../../../components/share/Slide/Slide";
 import { getBlogs } from "../../../utils/api";
+import { useDispatch } from "react-redux";
+import { userActions } from "../../../store/slices/userSlice";
 
 export default function Home() {
   const [blogs, setBlogs] = useState([]);
   const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-
+  const dispatch = useDispatch();
+  
+  useEffect(() => {
+    window.scrollTo({ top: 0, behaviar: "smoothly" });
+    dispatch(userActions.setOpenMenu(false));
+  }, []);
   useEffect(() => {
     const timeOut = setTimeout(fetchBlogs, 20);
     return () => clearTimeout(timeOut);
@@ -183,7 +190,10 @@ export default function Home() {
       </div>
       <section className="poster">
         <h1 className="poster-title">Unlock Your Natural Glow</h1>
-        <button className="poster-btn rounded-1" onClick={() => navigate("blogs")}>
+        <button
+          className="poster-btn rounded-1"
+          onClick={() => navigate("blogs")}
+        >
           Know more
         </button>
       </section>
@@ -487,7 +497,9 @@ export default function Home() {
                 visit your local beautya branches to find out more about our
                 special offers in make up and skincare products.
               </p>
-              <button className="offer-body-btn py-2 rounded-1">find branches</button>
+              <button className="offer-body-btn py-2 rounded-1">
+                find branches
+              </button>
             </div>
           </div>
         </div>

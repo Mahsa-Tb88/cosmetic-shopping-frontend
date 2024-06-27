@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./header.css";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, NavLink, useNavigate } from "react-router-dom";
@@ -16,9 +16,22 @@ export default function Header() {
   const isAdmin = useSelector((state) => state.user.user.isAdmin);
   const theme = useSelector((state) => state.user.theme);
   const shops = useSelector((state) => state.cart.shops);
+  const isOpenMenu = useSelector((state) => state.user.isOpenMenu);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const menuRef = useRef();
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handlerMenu);
+  });
+  function handlerMenu(e) {
+    if (!menuRef.current.contains(e.target)) {
+      dispatch(userActions.setOpenMenu(false));
+    }
+
+    return () => removeEventListener("mousedown", handler);
+  }
+
   const menuClass = [
     "d-flex flex-column justify-content-between align-items-baseline navbar-mobile",
     `${isOpenMenu ? "showMenu" : ""}`,
@@ -71,12 +84,12 @@ export default function Header() {
       <div className="d-lg-none d-flex justify-content-between align-items-center ">
         {!isOpenMenu ? (
           <IoIosMenu
-            onClick={() => setIsOpenMenu(!isOpenMenu)}
+            onClick={() => dispatch(userActions.setOpenMenu(true))}
             className="fs-1 icon-nav"
           />
         ) : (
           <RxCrossCircled
-            onClick={() => setIsOpenMenu(!isOpenMenu)}
+            onClick={() => dispatch(userActions.setOpenMenu(false))}
             className="fs-1 icon-nav"
           />
         )}
@@ -103,7 +116,7 @@ export default function Header() {
             )}
           </div>
         </div>
-        <nav className={menuClass}>
+        <nav className={menuClass} ref={menuRef}>
           <NavLink className="navlink rounded-1 py-4 ps-3 w-100" end to="/">
             Home
           </NavLink>

@@ -8,6 +8,7 @@ import { useSearchParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../../../utils/api";
 import { shopActions } from "../../../store/slices/shopSlice";
+import { userActions } from "../../../store/slices/userSlice";
 
 export default function ProductsShop() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -15,7 +16,10 @@ export default function ProductsShop() {
   const [isLoading, setIsLoading] = useState(true);
   const shop = useSelector((state) => state.shop);
   const dispatch = useDispatch();
-
+  useEffect(() => {
+    window.scrollTo({ top: 0, behaviar: "smoothly" });
+    dispatch(userActions.setOpenMenu(false));
+  }, []);
   useEffect(() => {
     const page = searchParams.get("page") || 1;
     const q = searchParams.get("q") || "";
