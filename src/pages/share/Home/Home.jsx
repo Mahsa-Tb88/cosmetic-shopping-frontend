@@ -13,7 +13,7 @@ export default function Home() {
   const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const dispatch = useDispatch();
-  
+
   useEffect(() => {
     window.scrollTo({ top: 0, behaviar: "smoothly" });
     dispatch(userActions.setOpenMenu(false));
@@ -65,6 +65,7 @@ export default function Home() {
       title: "Beautya Capture Total Dreamskin Care & Perfect",
       desc: " Plumping Gloss - Instant and Long-Term Volume Effect - 24h Hydration",
       price: 75.0,
+      numId: "664bbd503b769f8ad320339d",
     },
     {
       id: 3,
@@ -264,11 +265,14 @@ export default function Home() {
                   className=" col-md-6 col-lg-3  bestSellers-product mb-5"
                   key={p.id}
                 >
-                  <div className="border border-1 h-100">
-                    <div className="bestSellers-product-img">
-                      <img src={p.image} alt="product" />
-                    </div>
-                    <h3 className="bestSellers-product-title">{p.title}</h3>
+                  <div className="border border-1 h-100 ">
+                    <Link to="products" className="link">
+                      <div className="bestSellers-product-img">
+                        <img src={p.image} alt="product" />
+                      </div>
+                      <h3 className="bestSellers-product-title">{p.title}</h3>
+                    </Link>
+
                     <p className="bestSellers-product-desc">{p.desc}</p>
                     <span className="bestSellers-product-price">
                       $ {p.price}.00
@@ -287,7 +291,7 @@ export default function Home() {
           {bestSellers.map((p) => {
             return (
               <Slide key={p.id}>
-                <div className=" bestSellers-product mb-5 mx-3">
+                <div className=" bestSellers-product mb-5 mx-3 ">
                   <div className="border border-1 bestSellers-product-container d-flex flex-column justify-content-center align-items-center">
                     <div className="bestSellers-product-img text-center w-100">
                       <img src={p.image} alt="product" className="mx-auto" />
@@ -417,11 +421,12 @@ export default function Home() {
             </div>
           </Slide>
           <Slide>
-            <div className="slide-two border border-1 product-inner ">
+            <div className="slide-two mx-auto border border-1 product-inner ">
               <div className="slide-img text-center ">
                 <img
                   src={
-                    SERVER_URL + "/public/others/product image1716159972692.png"
+                    SERVER_URL +
+                    "/uploads/products/product image1716159972692.png"
                   }
                   alt="product1"
                 />
@@ -439,12 +444,12 @@ export default function Home() {
             </div>
           </Slide>
           <Slide>
-            <div className="slide-two product-inner border border-1 ">
+            <div className="slide-two mx-auto product-inner border border-1 ">
               <div className="slide-img text-center ">
                 <img
                   src={
                     SERVER_URL +
-                    "/public/others/product image21716159980002.png"
+                    "/uploads/products/product image21716159980002.png"
                   }
                   alt="product1"
                 />

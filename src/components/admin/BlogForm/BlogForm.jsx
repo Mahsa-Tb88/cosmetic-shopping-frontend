@@ -84,7 +84,7 @@ export default function BlogForm({ type, blog }) {
     setFailMessage("");
     setSuccessMessage("");
     if (data.image?.length && imageChanged) {
-      data.image = selectedImage.substring(21);
+      data.image = selectedImage.substring(31);
     }
 
     if (type === "new") {

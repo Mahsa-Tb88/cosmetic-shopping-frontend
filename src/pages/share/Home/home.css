@@ -5,7 +5,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  .link {
+    text-decoration: none;
+  }
   .container-column {
     width: 85%;
     position: fixed;
@@ -248,6 +250,7 @@
     margin-bottom: 15rem;
   }
   .bestSellers-product-container {
+    cursor: pointer;
     height: 43rem;
   }
   .bestSellers-product-img {
