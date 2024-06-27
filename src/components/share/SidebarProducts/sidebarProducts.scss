@@ -1,6 +1,7 @@
 .sidebarProducts {
   background-color: #79043c;
   padding: 2rem 1rem;
+  margin-bottom: 3rem;
 
   .input {
     font-size: 15px;
@@ -11,6 +12,9 @@
     font-size: 15px;
     outline: none;
     color: #212529;
+  }
+  @media (min-width: 640px) {
+    margin-bottom: 0;
   }
 }
 [data-bs-theme="dark"] .sidebarProducts {

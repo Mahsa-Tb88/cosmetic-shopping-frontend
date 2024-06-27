@@ -1,8 +1,8 @@
 .productsShop {
-  padding: 10rem 0;
+  padding-top: 5rem;
   .title-page {
     color: #79043c;
-    padding: 5rem 0;
+    padding: 3rem 0;
     font-size: 3rem;
   }
   .msg {
@@ -13,7 +13,13 @@
     color: #fff;
     padding: 20px 10px;
   }
-  .btn-error:hover{
+  .btn-error:hover {
     background-color: #5e0530;
+  }
+  @media (min-width: 640px) {
+    padding-top: 10rem;
+    .title-page {
+      padding: 5rem 0;
+    }
   }
 }

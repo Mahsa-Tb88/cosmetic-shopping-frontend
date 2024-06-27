@@ -1,5 +1,5 @@
 .blogs {
-  margin: 10rem 0;
+  margin: 7rem 0;
   .msg {
     color: #79043c;
   }
@@ -86,6 +86,9 @@
   .blog-item-desc {
     font-size: 1.6rem;
     color: #0c0c0c;
+  }
+  @media (min-width: 640px) {
+    margin: 10rem 0;
   }
 }
 [data-bs-theme="dark"] .blogs {

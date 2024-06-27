@@ -38,7 +38,7 @@ export default function Blogs() {
   const numOfPage = Math.ceil(totalBlogs / 4);
   return (
     <div className="blogs container mx-auto">
-      <h1 className="text-center py-5">Blogs</h1>
+      <h1 className="text-center py-5 display-3">Blogs</h1>
       {isLoading ? (
         <div className="d-flex justify-content-center align-items-center">
           <h2 className="msg me-3 fs-2">Is Loading...</h2>
